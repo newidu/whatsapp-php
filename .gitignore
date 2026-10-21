@@ -1,0 +1,14 @@
+# Auth/session data — NEVER commit these (full WhatsApp session keys!)
+examples/baileys_php_auth/
+my_auth/
+baileys_php_auth/
+*-auth/
+creds.json
+
+# Generated QR images (contain pairing secrets while valid!)
+examples/qr.svg
+examples/qr.png
+
+# Composer
+vendor/
+composer.lock

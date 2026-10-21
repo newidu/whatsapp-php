@@ -1,0 +1,37 @@
+{
+    "name": "baileys-php/baileys-php",
+    "description": "Pure PHP port of Baileys (@whiskeysockets/baileys) \u2014 WhatsApp Web multi-device API with full feature parity: messages, media, groups, communities, newsletters, business catalog, app-state sync, privacy. QR + pairing-code login. Zero dependencies.",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.2",
+        "ext-sodium": "*",
+        "ext-openssl": "*",
+        "ext-gmp": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-zlib": "*"
+    },
+    "suggest": {
+        "ext-gd": "Optional: render the pairing QR as PNG (SVG rendering works without it)"
+    },
+    "autoload": {
+        "psr-4": {
+            "BaileysPHP\\": "src/"
+        },
+        "files": [
+            "src/Utils/Crypto.php",
+            "src/functions.php"
+        ]
+    },
+    "scripts": {
+        "test": "php tests/run_tests.php"
+    },
+    "keywords": [
+        "whatsapp",
+        "Baileys",
+        "php",
+        "bot",
+        "multi-device"
+    ]
+}
